@@ -1,0 +1,46 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .parent { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    height: 100vh;
+    
+<!--     grid-column-gap: 12px; -->
+<!--     grid-row-gap: 12px;  -->
+  }
+  /* Dealing with 2 orphan items */
+
+.item:last-child:nth-child(3n - 1) {
+  grid-column-end: 1;
+}
+
+.item:nth-last-child(2):nth-child(3n + 1) {
+  grid-column-end: 2;
+}
+
+/* Dealing with single orphan */
+
+.item:last-child:nth-child(3n - 2) {
+  grid-column-end: 3;
+}
+  .div1 { grid-area: 1 / 1 / 5 / 5; } 
+</style>
+<div class="parent"> 
+<iframe class='itme' height="100%" width="100%"  src="https://www.youtube.com/embed/IT2pWSWneTc?controls=0&autoplay=1&mute=1" title="SKY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe class='itme'  height="100%" width="100%"  src="https://www.youtube.com/embed/eJ6ZMd4sVrI?controls=0&autoplay=1&mute=1" title="Aljazeera Arabic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe class='itme'  height="100%" width="100%"  src="https://www.youtube.com/embed/GE_SfNVNyqk?controls=0&autoplay=1&mute=1" title="DW" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe class='itme'  height="100%" width="100%"  src="https://www.youtube.com/embed/F-POY4Q0QSI?controls=0&autoplay=1&mute=1" title="Aljazeera English" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+<iframe class='itme'  height="100%" width="100%" src="https://www.youtube.com/embed/uOdqPddDu6E?controls=0&autoplay=1&mute=1" title="CNBC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+<iframe class='itme'  height="100%" width="100%" src="https://www.youtube.com/embed/HxI2TxhhS9A?controls=0&autoplay=1&mute=1" title="BBC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  <iframe class='itme'  height="100%" width="100%" src="https://www.youtube.com/embed/Q8blN1aOSFs?controls=0&autoplay=1&mute=1" title="fox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
