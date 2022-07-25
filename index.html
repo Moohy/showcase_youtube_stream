@@ -7,28 +7,12 @@
   .parent { 
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
     height: 100vh;
     
 <!--     grid-column-gap: 12px; -->
 <!--     grid-row-gap: 12px;  -->
   }
-  /* Dealing with 2 orphan items */
-
-.item:last-child:nth-child(3n - 1) {
-  grid-column-end: 1;
-}
-
-.item:nth-last-child(2):nth-child(3n + 1) {
-  grid-column-end: 2;
-}
-
-/* Dealing with single orphan */
-
-.item:last-child:nth-child(3n - 2) {
-  grid-column-end: 3;
-}
-  .div1 { grid-area: 1 / 1 / 5 / 5; } 
 </style>
 <div class="parent"> 
 <iframe class='itme' height="100%" width="100%"  src="https://www.youtube.com/embed/IT2pWSWneTc?controls=0&autoplay=1&mute=1" title="SKY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
